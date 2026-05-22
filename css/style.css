@@ -622,3 +622,33 @@ nav a:hover, nav a.active{
 html{
     scroll-behavior: smooth;
 }
+
+
+
+
+
+/* 1-624 OVERWRITE DENGAN CSS YANG SUDAH RAPIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+.form-card{
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+fieldset{
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #1e293b;
+}
+
+legend{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    padding: 0 8px;
+}
+
+
+.form-group{
+    margin-bottom: 16px;
+}
