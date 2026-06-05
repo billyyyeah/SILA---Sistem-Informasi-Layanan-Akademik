@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <input type = "number" id = "angka1" placeholder = "Masukkan angka1 Anda...">
+        <input type = "number" id = "angka2" placeholder = "Masukkan angka2 Anda...">
+        <button onclick="Hitung()">Hitung</button>
+        <div id="output1"></div>
+        <div id="output2"></div>
+        <div id="output3"></div>
+        <div id="output4"></div>
+
+    <script>
+        function Hitung() {
+            let inputan1 = Number(document.getElementById("angka1").value);
+            let inputan2 = Number(document.getElementById("angka2").value);
+            let hasil1 = inputan1 + inputan2;
+            let hasil2 = inputan1 - inputan2;
+            let hasil3 = inputan1 * inputan2;
+            let hasil4 = inputan1 / inputan2;
+            let result1 = document.getElementById("output1").innerHTML = inputan1 + " + " + inputan2 + " = " + hasil1;
+            let result2 = document.getElementById("output2").innerHTML = inputan1 + " - " + inputan2 + " = " + hasil2;
+            let result3 = document.getElementById("output3").innerHTML = inputan1 + " * " + inputan2 + " = " + hasil3;
+            let result4 = document.getElementById("output4").innerHTML = inputan1 + " / " + inputan2 + " = " + hasil4;
+            // let nama = inputan.value;
+        }
+
+        
+        // let nama = prompt("Masukkan nama Anda dung: ")
+        // alert("Halooooo " + nama + ", welcome yh...")
+
+        // let angka1 = Number(prompt("Masukkan angka pertama: "))
+        // let angka2 = Number(prompt("Masukkan angka pertama: "))
+        // let hasil = angka1 + angka2
+        // alert("Hasil: " + angka1 + ' + ' + angka2 + ' = ' + hasil)
+
+        // let bilangan = Number(prompt("Masukkan bilangan yang mau dicek ganjil-genapnya: "))
+        // console.log(bilangan)
+
+        // if (bilangan % 2 === 0) {
+        //     alert(bilangan + " adalah bilangan genap")
+        // }
+
+        // else {
+        //     alert(bilangan + " adalah bilangan ganjil")
+        // }
+        
+    </script>
+</body>
+</html>

@@ -44,23 +44,23 @@
             <div class="container">
                 <h1>Ajukan Layanan Akademik</h1>
                 <p class="section-desc"><em>Isilah form berikut ini!</em></p>
-                <form action="#" method="post" target="_self" class="form-card">
+                <form action="#" class="form-card" onsubmit="return validasiForm()">
                     <fieldset>
                         <legend>Data Pengajuan</legend>
 
                         <div class="form-group">
                             <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="namalengkap" name="namalengkap" placeholder="Masukkan nama Anda" required>
+                            <input type="text" id="namalengkap" name="namalengkap" placeholder="Masukkan nama Anda">
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="nim">NIM</label>
-                                <input type="text" id="nim" name="nim" placeholder="Contoh: 241120001" maxlength="9" required>
+                                <input type="text" id="nim" name="nim" placeholder="Contoh: 241120001" maxlength="9">
                             </div>
                             <div class="form-group">
                                 <label for="prodi">Program Studi</label>
-                                <select id="prodi" name="prodi" required>
+                                <select id="prodi" name="prodi">
                                     <option value="">-- Pilih Program Studi --</option>
                                     <option value="Teknik Informatika">Teknik Informatika</option>
                                     <option value="Sistem Informasi">Sistem Informasi</option>
@@ -75,7 +75,7 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="layanan">Jenis Layanan</label>
-                                <select id="layanan" name="layanan" required>
+                                <select id="layanan" name="layanan">
                                     <option value="">-- Pilih Layanan --</option>
                                     <option value="SKA">SKA - Surat Aktif Kuliah</option>
                                     <option value="CAK">CAK - Cuti Akademik</option>
@@ -85,7 +85,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="tanggal">Tanggal Pengajuan</label>
-                                <input type="date" id="tanggal" name="tanggal" required>
+                                <input type="date" id="tanggal" name="tanggal">
                             </div>
                         </div>
 
@@ -95,7 +95,7 @@
                         </div>
 
                         <div class="form-actions">
-                            <button type="submit" name="submit" class="btn btn-primary">🚀 Ajukan Sekarang</button>
+                            <input type="submit" name="submit" class="btn btn-primary" value="🚀 Ajukan Sekarang">
                             <button type="reset" name="reset" class="btn btn-outline">❗ Reset</button>
                         </div>
                         
@@ -113,6 +113,8 @@
         <p>&copy; 2026 SILA - Dibuat untuk tugas Pemrograman Web</p>
         </div>
     </footer>
+
+<script src="js/script.js"></script>  
 
 </body>
 </html>
