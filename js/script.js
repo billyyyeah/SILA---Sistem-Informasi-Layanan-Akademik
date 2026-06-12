@@ -4,6 +4,9 @@
 
 const LAYANAN = ['SKA', 'CAK','TNM', 'PDA']
 
+function formatTanggal(dateStr) {
+    const bulan = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', ]
+}
 function validasiForm() {
     const namalengkap = document.getElementById(namalengkap).value.trim();
     const nim = document.getElementById(nim).value.trim();
